@@ -1,0 +1,5 @@
+#pragma once
+
+// Version of the donut toolkit, injected by CMake from project(donut) in the
+// root CMakeLists.txt.
+#define DONUT_VERSION "@donut_VERSION@"
