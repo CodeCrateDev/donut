@@ -25,7 +25,7 @@
 
 set -euo pipefail
 
-DONUT_REPO="${DONUT_REPO:-}"
+DONUT_REPO="${DONUT_REPO:-https://github.com/CodeCrateDev/donut.git}"
 INSTALL_DIR="${INSTALL_DIR:-$HOME/.donut/bin}"
 LINK_DIR="${LINK_DIR:-/usr/bin}"
 BUILD_TYPE="${BUILD_TYPE:-Release}"
