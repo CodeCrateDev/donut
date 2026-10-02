@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(donut
-    VERSION 1.0.0
+    VERSION 1.0.1
     DESCRIPTION "donut - a toolkit of small Linux utilities"
     LANGUAGES CXX
 )
+
+# Suffix appended to every displayed version: "1.0.1" + "f1" -> "1.0.1f1".
+set(DONUT_VERSION_SUFFIX "f1")
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -32,4 +35,4 @@ foreach(tool_dir IN LISTS DONUT_TOOL_DIRS)
     endif()
 endforeach()
 
-message(STATUS "donut toolkit ${PROJECT_VERSION}")
+message(STATUS "donut toolkit ${PROJECT_VERSION}${DONUT_VERSION_SUFFIX}")

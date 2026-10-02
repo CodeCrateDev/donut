@@ -11,5 +11,5 @@ add_executable(donut-changemac main.cpp)
 target_link_libraries(donut-changemac PRIVATE donut_common)
 
 target_compile_definitions(donut-changemac PRIVATE
-    CHANGEMAC_VERSION="${PROJECT_VERSION}"
+    CHANGEMAC_VERSION="${PROJECT_VERSION}${DONUT_VERSION_SUFFIX}"
 )

@@ -11,5 +11,5 @@ add_executable(donut-scan main.cpp)
 target_link_libraries(donut-scan PRIVATE donut_common)
 
 target_compile_definitions(donut-scan PRIVATE
-    SCAN_VERSION="${PROJECT_VERSION}"
+    SCAN_VERSION="${PROJECT_VERSION}${DONUT_VERSION_SUFFIX}"
 )
