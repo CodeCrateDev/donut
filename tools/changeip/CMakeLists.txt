@@ -1,7 +1,7 @@
 # changeip: change the IPv4 address of a network interface.
 
 project(changeip
-    VERSION 1.1.0
+    VERSION 1.1.1
     DESCRIPTION "Change the IPv4 address, gateway and DNS of a network interface"
     LANGUAGES CXX
 )

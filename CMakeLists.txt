@@ -6,8 +6,8 @@ project(donut
     LANGUAGES CXX
 )
 
-# Suffix appended to every displayed version: "1.0.1" + "f1" -> "1.0.1f1".
-set(DONUT_VERSION_SUFFIX "f1")
+# Branch suffix appended to every displayed version: "1.0.1" + "-stable" -> "1.0.1-stable".
+set(DONUT_VERSION_SUFFIX "-stable")
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

@@ -1,7 +1,7 @@
 # netinfo: show interfaces, addresses, the default route and DNS at a glance.
 
 project(netinfo
-    VERSION 1.0.0
+    VERSION 1.0.1
     DESCRIPTION "Show network interfaces, addresses, routes and DNS at a glance"
     LANGUAGES CXX
 )
