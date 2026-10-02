@@ -4,7 +4,7 @@
 #
 # Install donut on a clean machine (note: pipe into bash, not sh):
 #
-#     curl -fsSL https://raw.githubusercontent.com/<you>/donut/main/scripts/setup.sh | bash
+#     curl -fsSL https://raw.githubusercontent.com/CodeCrateDev/donut/main/scripts/setup.sh | bash
 #
 # Or run from inside a checkout of the repository (the clone step is skipped):
 #
