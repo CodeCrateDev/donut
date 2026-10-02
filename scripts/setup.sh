@@ -42,8 +42,11 @@ cleanup() {
 }
 trap cleanup EXIT
 
-script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-if [ -f "$script_dir/../CMakeLists.txt" ]; then
+script_dir=""
+if [ -n "${BASH_SOURCE[0]:-}" ]; then
+    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+fi
+if [ -n "$script_dir" ] && [ -f "$script_dir/../CMakeLists.txt" ]; then
     src_dir="$(cd "$script_dir/.." && pwd)"
     say "Building from existing checkout at $src_dir"
 else
